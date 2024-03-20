@@ -24,3 +24,12 @@ document.addEventListener('mousemove', (e) => {
 document.addEventListener('mouseout', (e) => {
     cursor.style.display = "none";
 })
+
+// Cursor effects on click
+document.addEventListener('mousedown', (e) => {
+    cursor.classList.add('clicked');
+})
+
+document.addEventListener('mouseup', () => {
+    cursor.classList.remove('clicked');
+})

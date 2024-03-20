@@ -24,8 +24,13 @@ body {
     box-shadow:  0 0 20px #2696E8, 0 0 60px #2696E8, 0 0 100px #2696E8;
     animation: colors 5s infinite;
     transition: opacity .3s ease-out;
+    transition: transform .3s ease-in-out;
     transform: translate(-50%, -50%);
     display: none;
+}
+
+.cursor.clicked {
+    transform: scale(2.5);
 }
 
 @keyframes colors {
@@ -59,4 +64,14 @@ body {
     width: 45px;
     height: 45px;
     opacity: .3;
+}
+
+@keyframes click {
+    0%{
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(2);
+    }
 }
